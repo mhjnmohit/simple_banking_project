@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "username": "rohit",
+    "password": "1234",
+    "name": "Rohit Sharma",
+    "email": "rohit@bank.com",
+    "phone": "9876543210",
+    "address": "Mumbai, India",
+    "balance": 25000,
+    "transactions": [],
+    "loans": []
+  },
+  {
+    "id": 2,
+    "username": "mohit",
+    "password": "1111",
+    "name": "Mohit Mahajan",
+    "email": "mohit@bank.com",
+    "phone": "9876500000",
+    "address": "Bhusawal, India",
+    "balance": 15000,
+    "transactions": [],
+    "loans": []
+  },
+  {
+    "id": 3,
+    "username": "admin",
+    "password": "admin",
+    "role": "admin"
+  }
+]

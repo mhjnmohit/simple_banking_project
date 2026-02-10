@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RealBank – Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FULL CSS HERE -->
+  <style>
+    * ,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #f2f6ff;
+      --card-bg: #ffffff;
+      --border: #d9e1ec;
+      --text: #0f172a;
+      --muted: #64748b;
+      --primary: #2563eb;
+      --primary-soft: #dbeafe;
+      --radius-lg: 20px;
+      --shadow-soft: 0 18px 40px rgba(15, 23, 42, 0.08);
+      --font: "Inter", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: linear-gradient(135deg, #e6eeff, #f5f8ff);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .auth-wrapper {
+      width: 100%;
+      max-width: 420px;
+      padding: 20px;
+    }
+
+    .auth-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      padding: 32px 28px;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid var(--border);
+      animation: fadeIn 0.6s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .auth-brand {
+      display: inline-block;
+      padding: 6px 14px;
+      background: var(--primary-soft);
+      color: var(--primary);
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+
+    .auth-title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    .auth-subtitle {
+      margin: 4px 0 20px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 14px;
+    }
+
+    label {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    input,
+    select {
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      font-size: 14px;
+      background: #f8faff;
+      transition: 0.2s ease;
+    }
+
+    input:focus,
+    select:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px var(--primary-soft);
+      background: #ffffff;
+      outline: none;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    .btn.primary {
+      background: var(--primary);
+      color: #ffffff;
+    }
+
+    .btn.primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+    }
+
+    .auth-helper {
+      margin-top: 14px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body data-page="login">
+
+  <div class="auth-wrapper">
+    <div class="auth-card">
+      <div class="auth-brand">RealBank</div>
+      <h1 class="auth-title">Welcome Back 👋</h1>
+      <p class="auth-subtitle">Sign in to access your banking dashboard.</p>
+
+      <form id="login-form" class="auth-form">
+
+        <div class="form-group">
+          <label for="username">User ID</label>
+          <input type="text" id="username" required placeholder="Enter user ID" />
+        </div>
+
+        <div class="form-group">
+          <label for="password">PIN / Password</label>
+          <input type="password" id="password" required placeholder="Enter password" />
+        </div>
+
+        <div class="form-group">
+          <label for="role">Login as</label>
+          <select id="role">
+            <option value="admin">Admin</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn primary">Sign In</button>
+
+        <p class="auth-helper">.</p>
+      </form>
+
+    </div>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

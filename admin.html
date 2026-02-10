@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RealBank – Admin Panel</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="admin">
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-brand">RealBank</div>
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="customers.html" class="nav-link">Customers</a>
+        <a href="transactions.html" class="nav-link">Transactions</a>
+        <a href="loans.html" class="nav-link">Loans</a>
+        <a href="profile.html" class="nav-link">Profile</a>
+        <a href="admin.html" class="nav-link active">Admin</a>
+      </nav>
+      <button class="nav-link logout-link" id="logout-btn">Logout</button>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-btn" id="menu-toggle">☰</button>
+        <h1 class="topbar-title">Admin Panel</h1>
+        <div class="topbar-right">
+          <span class="pill admin-pill" id="user-role-pill">Admin</span>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="grid cards-summary">
+          <article class="card">
+            <h2>Total Customers</h2>
+            <p class="metric" id="admin-total-customers">0</p>
+          </article>
+          <article class="card">
+            <h2>Total Balance</h2>
+            <p class="metric" id="admin-total-balance">₹0</p>
+          </article>
+          <article class="card">
+            <h2>Total Loans</h2>
+            <p class="metric" id="admin-total-loans">₹0</p>
+          </article>
+          <article class="card">
+            <h2>Transactions</h2>
+            <p class="metric" id="admin-total-transactions">0</p>
+          </article>
+        </div>
+
+        <div class="grid two-columns gap">
+          <section class="card">
+            <div class="card-header">
+              <h2>Manage Customers</h2>
+            </div>
+            <div class="table-wrapper small">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Account</th>
+                    <th>Balance</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="admin-customers-body"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="card">
+            <div class="card-header">
+              <h2>Quick Actions</h2>
+            </div>
+
+            <div class="stack gap">
+              <button class="btn full" id="seed-demo-data-btn">
+                Reset Demo Data
+              </button>
+              <button class="btn ghost full" id="clear-data-btn">
+                Clear All Local Data
+              </button>
+              <p class="hint">
+                These actions only affect this browser. No real money, no real backend – safe demo.
+              </p>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

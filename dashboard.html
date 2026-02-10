@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RealBank – Dashboard</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="dashboard">
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">RealBank</div>
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="nav-link active">Dashboard</a>
+        <a href="customers.html" class="nav-link">Customers</a>
+        <a href="transactions.html" class="nav-link">Transactions</a>
+        <a href="loans.html" class="nav-link">Loans</a>
+        <a href="profile.html" class="nav-link">Profile</a>
+        <a href="admin.html" class="nav-link">Admin</a>
+      </nav>
+      <button class="nav-link logout-link" id="logout-btn">Logout</button>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-btn" id="menu-toggle">☰</button>
+        <h1 class="topbar-title">Dashboard</h1>
+        <div class="topbar-right">
+          <span class="pill" id="user-role-pill">Customer</span>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="grid cards-summary">
+          <article class="card">
+            <h2>Total Customers</h2>
+            <p class="metric" id="total-customers">0</p>
+            <p class="metric-sub">Active account holders</p>
+          </article>
+
+          <article class="card">
+            <h2>Total Balance</h2>
+            <p class="metric" id="total-balance">₹0</p>
+            <p class="metric-sub">Combined customer balances</p>
+          </article>
+
+          <article class="card">
+            <h2>Total Loans</h2>
+            <p class="metric" id="total-loans">₹0</p>
+            <p class="metric-sub">Outstanding principal</p>
+          </article>
+
+          <article class="card">
+            <h2>Today’s Transactions</h2>
+            <p class="metric" id="today-transactions">0</p>
+            <p class="metric-sub">Credits & debits processed today</p>
+          </article>
+        </div>
+
+        <div class="grid two-columns">
+          <section class="card">
+            <div class="card-header">
+              <h2>Recent Transactions</h2>
+              <a href="transactions.html" class="link">View all</a>
+            </div>
+            <div class="table-wrapper">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Account</th>
+                    <th>Type</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+                <tbody id="recent-transactions-body"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="card">
+            <div class="card-header">
+              <h2>Active Loans</h2>
+              <a href="loans.html" class="link">Manage</a>
+            </div>
+            <div class="table-wrapper">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Loan ID</th>
+                    <th>Customer</th>
+                    <th>Type</th>
+                    <th>EMI</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="dashboard-loans-body"></tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
