@@ -20,14 +20,14 @@ This is a simple front-end Banking Management System developed using HTML, CSS, 
 3. No server or database is required
 
 ## Project Type
-● Frontend based web application
-● Simple and beginner-friendly
-● Static project (no backend)
+- Frontend based web application
+- Simple and beginner-friendly
+- Static project (no backend)
 
 ## Limitations
-● No real database connectivity
-● No real authentication
-● Data is static and for demonstration only
+- No real database connectivity
+- No real authentication
+= Data is static and for demonstration only
 
 ## Technologies Used
 - HTML
@@ -50,10 +50,10 @@ Bank Project/
 └──  customers.json
 
 ## Future Enhancements
-● Backend integration using PHP / Node.js
-● Database integration
-● User authentication
-● Real-time transactions
+- Backend integration using PHP / Node.js
+- Database integration
+- User authentication
+- Real-time transactions
 
 ## Author
 Developed by Mohit Mahajan
