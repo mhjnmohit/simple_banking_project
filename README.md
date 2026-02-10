@@ -14,6 +14,21 @@ This is a simple front-end Banking Management System developed using HTML, CSS, 
 - User profile page
 - Responsive UI design
 
+## How to Run the Project
+1.Download or clone the repository
+2.Open index.html in any modern web browser
+3.No server or database is required
+
+## Project Type
+●Frontend based web application
+●Simple and beginner-friendly
+●Static project (no backend)
+
+## Limitations
+●No real database connectivity
+●No real authentication
+●Data is static and for demonstration only
+
 ## Technologies Used
 - HTML
 - CSS
@@ -34,26 +49,11 @@ Bank Project/
 ├── app.js
 └── customers.json
 
-How to Run the Project
-1.Download or clone the repository
-2.Open index.html in any modern web browser
-3.No server or database is required
-
-Project Type
-●Frontend based web application
-●Simple and beginner-friendly
-●Static project (no backend)
-
-Limitations
-●No real database connectivity
-●No real authentication
-●Data is static and for demonstration only
-
-Future Enhancements
+## Future Enhancements
 ●Backend integration using PHP / Node.js
 ●Database integration
 ●User authentication
 ●Real-time transactions
 
-Author
+## Author
 Developed by Mohit Mahajan
