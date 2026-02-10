@@ -27,7 +27,7 @@ This is a simple front-end Banking Management System developed using HTML, CSS, 
 ## Limitations
 - No real database connectivity
 - No real authentication
-= Data is static and for demonstration only
+- Data is static and for demonstration only
 
 ## Technologies Used
 - HTML
